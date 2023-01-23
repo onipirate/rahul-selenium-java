@@ -34,16 +34,17 @@ public class CoreJavaVrushUp2 {
 		for(String as: a) {
 			System.out.println(as);
 		}
-		System.out.println(a.get(3));
+		//System.out.println(a.get(3));
 		
 		//contains method if it has the value in the arraylist
+		System.out.println("MARKER ONE");
 		System.out.println(a.contains("Selenium"));
 		
 		
        //Convert Array to ArrayList
 		String[] name = {"john", "erwin","rai","arya"};
 		List<String> nameArrayList = Arrays.asList(name);
-		System.out.println(nameArrayList.contains("mom"));
+		//System.out.println(nameArrayList.contains("mom"));
 	}
 
 }
