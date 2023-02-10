@@ -15,9 +15,10 @@ public class StatisDropDownJava {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Ruby27\\bin\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));	
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise");
+		Thread.sleep(5000);
+		driver.manage().window().maximize();
 		WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		// only applicable for select tagnames
 		
@@ -30,6 +31,7 @@ public class StatisDropDownJava {
 		Thread.sleep(5);
 		dropdown.selectByValue("INR");
 		System.out.println(dropdown.getFirstSelectedOption().getText());
+		driver.quit();
 
 	}
 
